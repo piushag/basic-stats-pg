@@ -69,4 +69,13 @@ public class BasicStats {
 
       return mode;
     }
+
+    /**
+     * Compute the maximum of an array of numbers.
+     */
+    public static double max(double ... numbers) {
+        Arrays.sort(numbers);
+        int size = numbers.length;
+        return numbers[size-1];
+    }
 }

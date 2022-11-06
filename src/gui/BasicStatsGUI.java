@@ -47,6 +47,7 @@ public class BasicStatsGUI implements View {
         childViews.add(new MedianView(jpStats));
         childViews.add(new MeanView(jpStats));
         childViews.add(new NumbersView(jfMain));
+        childViews.add(new MaxView(jpStats));
 
 
         jfMain.getContentPane().add(jpStats, BorderLayout.CENTER);
@@ -71,8 +72,16 @@ public class BasicStatsGUI implements View {
             public void actionPerformed(ActionEvent e) {
                 // Parse input and add number to the ArrayList
 
-                Double num = Double.parseDouble(jtfNumber.getText());
-                model.addNumber(num);
+                Double num = null;
+                try {
+                    num = Double.parseDouble(jtfNumber.getText());
+                    model.addNumber(num);
+                } catch (NumberFormatException ex) {
+                    String message = "Not a valid number";
+                    JOptionPane.showMessageDialog(new JFrame(), message, "Error",
+                            JOptionPane.ERROR_MESSAGE);
+                    throw new RuntimeException(ex);
+                }
 
                 update(model);
             }
