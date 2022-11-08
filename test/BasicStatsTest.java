@@ -69,4 +69,20 @@ public class BasicStatsTest {
       mode   = BasicStats.mode(numbers5);
       assertEquals (0, mode, EPS);
     }
+
+    @Test
+    public void testMax() {
+        double[] numbers = {9, 11, 1, 4, 7, 21};
+
+        double max = BasicStats.max(numbers);
+        assertEquals(21, max, EPS);
+
+        double[] numbers2 = {9, 1, 4, 7, 2};
+        max = BasicStats.max(numbers2);
+        assertEquals(9, max, EPS);
+
+        double[] numbers3 = {3};
+        max = BasicStats.max(numbers3);
+        assertEquals(3, max, EPS);
+    }
 }

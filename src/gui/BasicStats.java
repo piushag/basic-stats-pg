@@ -1,14 +1,76 @@
 package gui;
 
+import gui.view.*;
+import model.BasicStatsModel;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.*;
+import java.util.List;
 
 /**
  * A simple class to compute basic, descriptive statistics.
  */
 public class BasicStats {
 
+    public static final String APP_TITLE = "Simple stats";
+
     public static void main(String ... args) {
+
         System.out.println("Let's do some basic statistics...");
+
+        BasicStatsModel model = new BasicStatsModel();
+
+        JFrame jfMain = new JFrame(APP_TITLE);
+
+        // Create the main frame of the application, and set size and position
+        jfMain.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        jfMain.setSize(600, 400);
+        jfMain.setLocationRelativeTo(null);
+
+        // Panel that shows stats about the numbers
+
+        JPanel jpStats = new JPanel(new FlowLayout(FlowLayout.CENTER));
+
+        List<View> childViews  = new ArrayList<>();
+
+        BasicStatsGUI gui = new BasicStatsGUI();
+
+        //new stuff
+        CountView countView = new CountView(jpStats);
+        MedianView medianView = new MedianView(jpStats);
+        MeanView meanView = new MeanView(jpStats);
+        MaxView maxView = new MaxView(jpStats);
+        NumbersView numbersView = new NumbersView(jfMain);
+        AddNumberView addNumberView = new AddNumberView(model);
+        ResetView resetView = new ResetView(model);
+        resetView.addController(gui);
+        addNumberView.addController(gui);
+        childViews.add(countView);
+        childViews.add(medianView);
+        childViews.add(meanView);
+        childViews.add(maxView);
+        childViews.add(numbersView);
+        childViews.add(addNumberView);
+        childViews.add(resetView);
+
+        gui.setViews(childViews);
+
+
+        jfMain.getContentPane().add(jpStats, BorderLayout.CENTER);
+
+
+        JPanel jpInput = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        jpInput.add(addNumberView.show());
+        jpInput.add(addNumberView.getButton());
+        jpInput.add(resetView.getButton());
+
+        jfMain.getContentPane().add(jpInput, BorderLayout.NORTH);
+
+        jfMain.setVisible(true);
+
     }
 
     /**
