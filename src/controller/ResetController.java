@@ -5,10 +5,10 @@ import model.BasicStatsModel;
 
 public class ResetController implements Controller{
 
-    BasicStatsView gui;
+    BasicStatsView view;
 
     public ResetController(BasicStatsView gui) {
-        this.gui = gui;
+        this.view = gui;
     }
 
 
@@ -16,11 +16,11 @@ public class ResetController implements Controller{
     @Override
     public void updateModels(BasicStatsModel model) {
         model.reset();
-        gui.update(model);
+        view.update(model);
     }
 
     @Override
-    public void updateModelsWithNums(BasicStatsModel model, String text) {
-
+    public void updateModels(BasicStatsModel model, String number) {
     }
+
 }

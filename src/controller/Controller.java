@@ -7,5 +7,6 @@ public interface Controller {
     public void updateModels(BasicStatsModel model);
 
 
-    public void updateModelsWithNums(BasicStatsModel model, String text);
+    void updateModels(BasicStatsModel model, String number);
+
 }

@@ -36,7 +36,7 @@ public class AddNumberView implements View{
 
         jbAdd.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                cont.updateModelsWithNums(model, jtfNumber.getText());
+                cont.updateModels(model, jtfNumber.getText());
             }
         });
 

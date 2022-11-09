@@ -15,12 +15,14 @@ public class AddNumberController implements Controller {
     }
 
 
+    @Override
     public void updateModels(BasicStatsModel model) {
 
     }
 
+    @Override
+    public void updateModels(BasicStatsModel model, String number) {
 
-    public void updateModelsWithNums(BasicStatsModel model, String number) {
         Double num = null;
         try {
             num = Double.parseDouble(number);
@@ -32,5 +34,6 @@ public class AddNumberController implements Controller {
             throw new RuntimeException(ex);
         }
         gui.update(model);
+
     }
 }

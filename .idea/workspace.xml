@@ -2,24 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efa0b192-2166-4793-8c8f-53818f16cddf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test/ViewUtilsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasicStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/gui/BasicStats.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/gui/BasicStatsGUI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/gui/view/AddNumberView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/gui/view/AddNumberView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/gui/view/CountView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/gui/view/MaxView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/gui/view/MeanView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/gui/view/MedianView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/gui/view/NumbersView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/gui/view/ResetView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/gui/view/ResetView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/gui/view/View.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/AddNumberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddNumberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ResetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ResetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/BasicStatsView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/BasicStatsView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/AddNumberView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AddNumberView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/CountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CountView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/MaxView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MaxView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/MeanView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MeanView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/MedianView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MedianView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/NumbersView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/NumbersView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/ResetView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ResetView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/ViewUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ViewUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/BasicStatsGUITest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/BasicStatsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BasicStatsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/AddNumberView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AddNumberView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +64,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.gui.BasicStats">
+  <component name="RunManager" selected="Application.BasicStats">
     <configuration name="BasicStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BasicStats" />
       <module name="basic-stats-pg" />
@@ -124,8 +123,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.gui.BasicStats" />
         <item itemvalue="Application.BasicStats" />
+        <item itemvalue="Application.gui.BasicStats" />
         <item itemvalue="JUnit.ViewUtilsTest.testMax" />
         <item itemvalue="JUnit.BasicStatsTest.testAddANumberSuccess" />
         <item itemvalue="JUnit.ViewUtilsTest.testCentralTendency" />
@@ -141,7 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667687551545</updated>
       <workItem from="1667687559760" duration="8404000" />
-      <workItem from="1667696286568" duration="22135000" />
+      <workItem from="1667696286568" duration="23308000" />
     </task>
     <servers />
   </component>
