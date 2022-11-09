@@ -16,7 +16,7 @@ implementation is merely intended to be used in the CS520/620 course.
 ### How to run (from Terminal):
 
 1. After building the project (i.e., running `ant`), run the following command in the basic-stats folder:
-   `java -cp bin BasicStatsApp`
+   `java -cp bin gui.BasicStats`
 
 ### How to clean up (from Terminal):
 
@@ -24,7 +24,8 @@ implementation is merely intended to be used in the CS520/620 course.
 
 Program features:
 
-* Displays a set of entered numbers.
+* Displays a set of entered numbers, and the count.
 * Computes the mean of the set of numbers.
 * Computes the median of the set of numbers.
+* Computes the maximum of the set of numbers.
     

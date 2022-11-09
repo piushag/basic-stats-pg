@@ -1,12 +1,12 @@
 package gui;
 
+import controller.AddNumberController;
+import controller.ResetController;
 import gui.view.*;
 import model.BasicStatsModel;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.util.*;
 import java.util.List;
 
@@ -34,8 +34,6 @@ public class BasicStats {
 
         JPanel jpStats = new JPanel(new FlowLayout(FlowLayout.CENTER));
 
-        List<View> childViews  = new ArrayList<>();
-
         BasicStatsGUI gui = new BasicStatsGUI();
 
         //new stuff
@@ -46,17 +44,24 @@ public class BasicStats {
         NumbersView numbersView = new NumbersView(jfMain);
         AddNumberView addNumberView = new AddNumberView(model);
         ResetView resetView = new ResetView(model);
-        resetView.addController(gui);
-        addNumberView.addController(gui);
-        childViews.add(countView);
-        childViews.add(medianView);
-        childViews.add(meanView);
-        childViews.add(maxView);
-        childViews.add(numbersView);
-        childViews.add(addNumberView);
-        childViews.add(resetView);
 
-        gui.setViews(childViews);
+
+        ResetController reset = new ResetController(gui);
+        resetView.addController(reset);
+
+        AddNumberController add = new AddNumberController(gui);
+        addNumberView.addController(add);
+
+
+
+        gui.addView(countView);
+        gui.addView(medianView);
+        gui.addView(meanView);
+        gui.addView(maxView);
+        gui.addView(numbersView);
+        gui.addView(addNumberView);
+        gui.addView(resetView);
+
 
 
         jfMain.getContentPane().add(jpStats, BorderLayout.CENTER);

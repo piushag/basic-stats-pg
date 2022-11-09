@@ -1,5 +1,6 @@
 package gui.view;
 
+import controller.Controller;
 import gui.BasicStatsGUI;
 import model.BasicStatsModel;
 
@@ -9,9 +10,26 @@ import java.awt.event.ActionListener;
 
 public class AddNumberView implements View{
     private JTextField jtfNumber;
+
+    public JTextField getJtfNumber() {
+        return jtfNumber;
+    }
+
+    public void setJtfNumber(JTextField jtfNumber) {
+        this.jtfNumber = jtfNumber;
+    }
+
+    public JButton getJbAdd() {
+        return jbAdd;
+    }
+
+    public void setJbAdd(JButton jbAdd) {
+        this.jbAdd = jbAdd;
+    }
+
     private JButton jbAdd;
 
-    private BasicStatsGUI controller;
+    private Controller cont;
 
     public AddNumberView(BasicStatsModel model){
         jtfNumber = new JTextField(5);
@@ -19,18 +37,7 @@ public class AddNumberView implements View{
 
         jbAdd.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                // Parse input and add number to the ArrayList
-                Double num = null;
-                try {
-                    num = Double.parseDouble(jtfNumber.getText());
-                    model.addNumber(num);
-                } catch (NumberFormatException ex) {
-                    String message = "Not a valid number";
-                    JOptionPane.showMessageDialog(new JFrame(), message, "Error",
-                            JOptionPane.ERROR_MESSAGE);
-                    throw new RuntimeException(ex);
-                }
-                controller.update(model);
+                cont.updateModelsWithNums(model, jtfNumber.getText());
             }
         });
 
@@ -48,8 +55,8 @@ public class AddNumberView implements View{
         return jbAdd;
     }
 
-    public void addController(BasicStatsGUI ctrl) {
-        controller = ctrl;
+    public void addController(Controller ctrl) {
+        cont = ctrl;
     }
 
 

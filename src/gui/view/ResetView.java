@@ -1,5 +1,7 @@
 package gui.view;
 
+import controller.Controller;
+import controller.ResetController;
 import gui.BasicStatsGUI;
 import model.BasicStatsModel;
 
@@ -9,8 +11,16 @@ import java.awt.event.ActionListener;
 
 public class ResetView implements View{
 
+    public JButton getJbReset() {
+        return jbReset;
+    }
+
+    public void setJbReset(JButton jbReset) {
+        this.jbReset = jbReset;
+    }
+
     private JButton jbReset;
-    private BasicStatsGUI controller;
+    private Controller controller;
 
     public ResetView(BasicStatsModel model){
         // Panel with a text field/button to enter numbers and a button to reset the application
@@ -20,11 +30,7 @@ public class ResetView implements View{
             // which is invoked if the user interacts with the GUI component -- in this
             // case, if the user clicks the button.
             public void actionPerformed(ActionEvent e) {
-                // Clear the ArrayList and all text fields
-                model.reset();
-                //jtfNumber.setText("");
-
-                controller.update(model);
+                controller.updateModels(model);
             }
         });
     }
@@ -36,7 +42,7 @@ public class ResetView implements View{
         return jbReset;
     }
 
-    public void addController(BasicStatsGUI ctrl) {
+    public void addController(Controller ctrl) {
         controller = ctrl;
     }
 }

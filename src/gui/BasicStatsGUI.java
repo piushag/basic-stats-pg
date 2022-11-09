@@ -28,7 +28,7 @@ public class BasicStatsGUI implements View {
 
     private JFrame jfMain = new JFrame(APP_TITLE);
 
-    private List<View> childViews;
+    private List<View> childViews = new ArrayList<>();
 
     public BasicStatsGUI() {
 
@@ -40,13 +40,12 @@ public class BasicStatsGUI implements View {
         }
     }
 
-    public void show() {
-        // Show the frame
-        jfMain.setVisible(true);
+    public void addView(View view) {
+        childViews.add(view);
     }
 
-    public void setViews(List<View> views){
-        this.childViews = views;
+    public void removeView(View view) {
+        childViews.remove(view);
     }
 
 }
