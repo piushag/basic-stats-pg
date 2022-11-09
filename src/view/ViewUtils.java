@@ -1,4 +1,4 @@
-package gui.view;
+package view;
 
 import java.text.DecimalFormat;
 import java.util.Arrays;

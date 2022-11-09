@@ -1,4 +1,4 @@
-package gui;
+package view;
 
 import java.util.*;
 import javax.swing.*;
@@ -6,8 +6,8 @@ import javax.swing.*;
 import java.util.List;
 
 import model.BasicStatsModel;
-//import gui.view.View;
-import gui.view.*;
+
+import view.*;
 
 
 /**

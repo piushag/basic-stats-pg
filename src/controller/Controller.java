@@ -1,6 +1,5 @@
 package controller;
 
-import gui.view.View;
 import model.BasicStatsModel;
 
 public interface Controller {

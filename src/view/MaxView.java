@@ -1,4 +1,4 @@
-package gui.view;
+package view;
 
 import model.BasicStatsModel;
 

@@ -1,4 +1,4 @@
-package gui.view;
+package view;
 
 import model.BasicStatsModel;
 
@@ -32,4 +32,6 @@ public class NumbersView implements View
         }
 
     }
+
+
 }

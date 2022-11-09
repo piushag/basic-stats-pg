@@ -2,22 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efa0b192-2166-4793-8c8f-53818f16cddf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/gui/view/ViewUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/ViewUtilsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BasicStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicStats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/AddNumberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddNumberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ResetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ResetController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/BasicStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/BasicStatsGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/BasicStatsView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/AddNumberView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/view/AddNumberView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/CountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/view/CountView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/MaxView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/view/MaxView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/MeanView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/view/MeanView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/MedianView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/view/MedianView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/NumbersView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/view/NumbersView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/view/ResetView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/view/ResetView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/BasicStatsGUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BasicStatsGUITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/BasicStatsView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/BasicStatsView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/view/AddNumberView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AddNumberView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/view/CountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CountView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/view/MaxView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MaxView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/view/MeanView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MeanView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/view/MedianView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MedianView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/view/NumbersView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/NumbersView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/view/ResetView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ResetView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/view/ViewUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ViewUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/BasicStatsGUITest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test/BasicStatsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BasicStatsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,30 +92,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicStatsGUITest.testAddANumberSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BasicStatsTest.testAddANumberSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basic-stats-pg" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BasicStatsGUITest" />
+      <option name="MAIN_CLASS_NAME" value="BasicStatsTest" />
       <option name="METHOD_NAME" value="testAddANumberSuccess" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicStatsTest.testCentralTendency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ViewUtilsTest.testCentralTendency" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basic-stats-pg" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BasicStatsTest" />
+      <option name="MAIN_CLASS_NAME" value="ViewUtilsTest" />
       <option name="METHOD_NAME" value="testCentralTendency" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicStatsTest.testMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ViewUtilsTest.testMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basic-stats-pg" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BasicStatsTest" />
+      <option name="MAIN_CLASS_NAME" value="ViewUtilsTest" />
       <option name="METHOD_NAME" value="testMax" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -125,9 +126,9 @@
       <list>
         <item itemvalue="Application.gui.BasicStats" />
         <item itemvalue="Application.BasicStats" />
-        <item itemvalue="JUnit.BasicStatsTest.testMax" />
-        <item itemvalue="JUnit.BasicStatsGUITest.testAddANumberSuccess" />
-        <item itemvalue="JUnit.BasicStatsTest.testCentralTendency" />
+        <item itemvalue="JUnit.ViewUtilsTest.testMax" />
+        <item itemvalue="JUnit.BasicStatsTest.testAddANumberSuccess" />
+        <item itemvalue="JUnit.ViewUtilsTest.testCentralTendency" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +141,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667687551545</updated>
       <workItem from="1667687559760" duration="8404000" />
-      <workItem from="1667696286568" duration="20755000" />
+      <workItem from="1667696286568" duration="22135000" />
     </task>
     <servers />
   </component>

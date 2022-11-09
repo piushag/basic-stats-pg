@@ -1,12 +1,11 @@
 import controller.AddNumberController;
 import controller.ResetController;
-import gui.BasicStatsView;
-import gui.view.*;
+import view.*;
+
 import model.BasicStatsModel;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.*;
 
 /**
  * A simple class to compute basic, descriptive statistics.

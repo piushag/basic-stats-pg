@@ -1,6 +1,6 @@
 package controller;
 
-import gui.BasicStatsView;
+import view.BasicStatsView;
 import model.BasicStatsModel;
 
 public class ResetController implements Controller{
