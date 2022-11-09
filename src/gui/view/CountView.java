@@ -1,11 +1,9 @@
 package gui.view;
 
 import model.BasicStatsModel;
-import java.util.*;
+
 import javax.swing.*;
 
-//import java.awt.*;
-//import java.awt.event.*;
 
 /**
 Implements all the logic for adding the count

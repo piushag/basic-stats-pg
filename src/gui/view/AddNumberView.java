@@ -1,7 +1,6 @@
 package gui.view;
 
 import controller.Controller;
-import gui.BasicStatsGUI;
 import model.BasicStatsModel;
 
 import javax.swing.*;

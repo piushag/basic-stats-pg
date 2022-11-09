@@ -3,8 +3,6 @@ package gui;
 import java.util.*;
 import javax.swing.*;
 
-import java.awt.*;
-import java.awt.event.*;
 import java.util.List;
 
 import model.BasicStatsModel;
@@ -21,7 +19,7 @@ import gui.view.*;
  * <p>
  * For the MVC architecture pattern, these are the views and controllers.
  */
-public class BasicStatsGUI implements View {
+public class BasicStatsView implements View {
     public static final String APP_TITLE = "Simple stats";
 
     private static BasicStatsModel model = new BasicStatsModel();
@@ -30,7 +28,7 @@ public class BasicStatsGUI implements View {
 
     private List<View> childViews = new ArrayList<>();
 
-    public BasicStatsGUI() {
+    public BasicStatsView() {
 
     }
 

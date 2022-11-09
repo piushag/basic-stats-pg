@@ -1,8 +1,7 @@
 package gui.view;
 
-import gui.BasicStats;
 import model.BasicStatsModel;
-import java.util.*;
+
 import javax.swing.*;
 
 public class MaxView implements View {
@@ -20,7 +19,7 @@ public class MaxView implements View {
             jtfMax.setText("");
         }else {
             // Compute and set the maximum
-            double max = BasicStats.max(model.getArrayDouble());
+            double max = ViewUtils.max(model.getArrayDouble());
             jtfMax.setText("" + max);
         }
 

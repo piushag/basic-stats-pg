@@ -1,12 +1,9 @@
 package gui.view;
 
-import gui.BasicStats;
 import model.BasicStatsModel;
-import java.util.*;
+
 import javax.swing.*;
 
-//import java.awt.*;
-//import java.awt.event.*;
 
 /**
  Implements all the logic for adding the median
@@ -27,7 +24,8 @@ public class MedianView implements View
             jtfMedian.setText("");
         }else {
             // Compute and set the median
-            double median = BasicStats.median(model.getArrayDouble());
+
+            double median = ViewUtils.median(model.getArrayDouble());
             jtfMedian.setText("" + median);
         }
 

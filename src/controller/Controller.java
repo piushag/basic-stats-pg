@@ -8,5 +8,5 @@ public interface Controller {
     public void updateModels(BasicStatsModel model);
 
 
-    void updateModelsWithNums(BasicStatsModel model, String text);
+    public void updateModelsWithNums(BasicStatsModel model, String text);
 }

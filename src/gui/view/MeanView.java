@@ -1,12 +1,8 @@
 package gui.view;
 
-import gui.BasicStats;
 import model.BasicStatsModel;
-import java.util.*;
-import javax.swing.*;
 
-//import java.awt.*;
-//import java.awt.event.*;
+import javax.swing.*;
 
 /**
  Implements all the logic for adding the mean
@@ -27,7 +23,7 @@ public class MeanView implements View
             jtfMean.setText("");
         }else {
             // Compute and set the mean
-            double mean = BasicStats.mean(model.getArrayDouble());
+            double mean = ViewUtils.mean(model.getArrayDouble());
             jtfMean.setText("" + mean);
         }
 

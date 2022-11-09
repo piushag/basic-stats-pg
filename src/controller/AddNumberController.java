@@ -1,16 +1,16 @@
 package controller;
 
-import gui.BasicStatsGUI;
+import gui.BasicStatsView;
 import model.BasicStatsModel;
 
 import javax.swing.*;
 
 public class AddNumberController implements Controller {
 
-    private BasicStatsGUI gui;
+    private BasicStatsView gui;
 
 
-    public AddNumberController(BasicStatsGUI gui) {
+    public AddNumberController(BasicStatsView gui) {
         this.gui = gui;
     }
 

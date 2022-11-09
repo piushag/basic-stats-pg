@@ -1,16 +1,13 @@
 package controller;
 
-import gui.BasicStatsGUI;
-import gui.view.View;
+import gui.BasicStatsView;
 import model.BasicStatsModel;
-
-import java.util.ArrayList;
 
 public class ResetController implements Controller{
 
-    BasicStatsGUI gui;
+    BasicStatsView gui;
 
-    public ResetController(BasicStatsGUI gui) {
+    public ResetController(BasicStatsView gui) {
         this.gui = gui;
     }
 

@@ -2,12 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="efa0b192-2166-4793-8c8f-53818f16cddf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/gui/view/ViewUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BasicStatsApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/BasicStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/BasicStats.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gui/BasicStatsGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/BasicStatsGUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/AddNumberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddNumberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/ResetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ResetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/BasicStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicStats.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/BasicStatsGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/BasicStatsView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/view/AddNumberView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/view/AddNumberView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/view/CountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/view/CountView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/view/MaxView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/view/MaxView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/view/MeanView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/view/MeanView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/view/MedianView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/view/MedianView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gui/view/NumbersView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/view/NumbersView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gui/view/ResetView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gui/view/ResetView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/BasicStatsGUITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BasicStatsGUITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/BasicStatsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BasicStatsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,12 +78,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="gui.BasicStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gui.BasicStats" />
+    <configuration name="BasicStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BasicStats" />
       <module name="basic-stats-pg" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="gui.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,7 +140,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667687551545</updated>
       <workItem from="1667687559760" duration="8404000" />
-      <workItem from="1667696286568" duration="19222000" />
+      <workItem from="1667696286568" duration="20755000" />
     </task>
     <servers />
   </component>
@@ -146,16 +157,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/gui/view/AddNumberView.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
