@@ -13,14 +13,26 @@ import java.awt.*;
 public class BasicStats {
 
     public static final String APP_TITLE = "Simple stats";
+    private static BasicStatsModel model;
+
+    private static JFrame jfMain ;
+
+    private static JPanel jpStats;
+
+    private static JPanel jpInput;
+
+
+    private static BasicStatsView bsView;
+
+
 
     public static void main(String ... args) {
 
         System.out.println("Let's do some basic statistics...");
 
-        BasicStatsModel model = new BasicStatsModel();
+        model = new BasicStatsModel();
 
-        JFrame jfMain = new JFrame(APP_TITLE);
+        jfMain = new JFrame(APP_TITLE);
 
         // Create the main frame of the application, and set size and position
         jfMain.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
@@ -29,9 +41,9 @@ public class BasicStats {
 
         // Panel that shows stats about the numbers
 
-        JPanel jpStats = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        jpStats = new JPanel(new FlowLayout(FlowLayout.CENTER));
 
-        BasicStatsView gui = new BasicStatsView();
+        bsView = new BasicStatsView();
 
         //new stuff
         CountView countView = new CountView(jpStats);
@@ -43,28 +55,28 @@ public class BasicStats {
         ResetView resetView = new ResetView(model);
 
 
-        ResetController reset = new ResetController(gui);
+        ResetController reset = new ResetController(bsView);
         resetView.addController(reset);
 
-        AddNumberController add = new AddNumberController(gui);
+        AddNumberController add = new AddNumberController(bsView);
         addNumberView.addController(add);
 
 
 
-        gui.addView(countView);
-        gui.addView(medianView);
-        gui.addView(meanView);
-        gui.addView(maxView);
-        gui.addView(numbersView);
-        gui.addView(addNumberView);
-        gui.addView(resetView);
+        bsView.addView(countView);
+        bsView.addView(medianView);
+        bsView.addView(meanView);
+        bsView.addView(maxView);
+        bsView.addView(numbersView);
+        bsView.addView(addNumberView);
+        bsView.addView(resetView);
 
 
 
         jfMain.getContentPane().add(jpStats, BorderLayout.CENTER);
 
 
-        JPanel jpInput = new JPanel(new FlowLayout(FlowLayout.CENTER));
+        jpInput = new JPanel(new FlowLayout(FlowLayout.CENTER));
         jpInput.add(addNumberView.show());
         jpInput.add(addNumberView.getButton());
         jpInput.add(resetView.getButton());
@@ -73,5 +85,45 @@ public class BasicStats {
 
         jfMain.setVisible(true);
 
+    }
+
+    public static BasicStatsModel getModel() {
+        return model;
+    }
+
+    public static void setModel(BasicStatsModel model) {
+        BasicStats.model = model;
+    }
+
+    public static JFrame getJfMain() {
+        return jfMain;
+    }
+
+    public static void setJfMain(JFrame jfMain) {
+        BasicStats.jfMain = jfMain;
+    }
+
+    public static JPanel getJpStats() {
+        return jpStats;
+    }
+
+    public static void setJpStats(JPanel jpStats) {
+        BasicStats.jpStats = jpStats;
+    }
+
+    public static JPanel getJpInput() {
+        return jpInput;
+    }
+
+    public static void setJpInput(JPanel jpInput) {
+        BasicStats.jpInput = jpInput;
+    }
+
+    public static BasicStatsView getBsView() {
+        return bsView;
+    }
+
+    public static void setBsView(BasicStatsView bsView) {
+        BasicStats.bsView = bsView;
     }
 }

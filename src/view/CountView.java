@@ -10,6 +10,7 @@ Implements all the logic for adding the count
  */
 public class CountView implements View
 {
+
     private JTextField jtfCount;
 
     public CountView(JPanel jpStats) {
@@ -28,5 +29,13 @@ public class CountView implements View
             jtfCount.setText("" + count);
         }
 
+    }
+
+    public JTextField getJtfField() {
+        return jtfCount;
+    }
+
+    public void setJtfCount(JTextField jtfCount) {
+        this.jtfCount = jtfCount;
     }
 }

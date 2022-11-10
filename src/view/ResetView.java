@@ -18,6 +18,7 @@ public class ResetView implements View{
     }
 
     private JButton jbReset;
+
     private Controller controller;
 
     public ResetView(BasicStatsModel model){
@@ -36,11 +37,21 @@ public class ResetView implements View{
     public void update(BasicStatsModel model) {
     }
 
+    @Override
+    public JTextField getJtfField() {
+        return null;
+    }
+
+
     public JButton getButton() {
         return jbReset;
     }
 
     public void addController(Controller ctrl) {
         controller = ctrl;
+    }
+
+    public Controller getController() {
+        return controller;
     }
 }

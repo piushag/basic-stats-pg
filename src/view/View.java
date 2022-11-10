@@ -2,6 +2,8 @@ package view;
 
 import model.BasicStatsModel;
 
+import javax.swing.*;
+
 
 /**
  * The View interface represents a visualization of the BasicStatsModel.
@@ -15,4 +17,6 @@ public interface View
      * @param model The current BasicStatsModel to be visualized
      */
     public void update(BasicStatsModel model);
+
+    JTextField getJtfField();
 }

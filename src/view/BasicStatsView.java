@@ -26,6 +26,7 @@ public class BasicStatsView implements View {
 
     private JFrame jfMain = new JFrame(APP_TITLE);
 
+
     private List<View> childViews = new ArrayList<>();
 
     public BasicStatsView() {
@@ -38,12 +39,26 @@ public class BasicStatsView implements View {
         }
     }
 
+    @Override
+    public JTextField getJtfField() {
+        return null;
+    }
+
+
     public void addView(View view) {
         childViews.add(view);
     }
 
     public void removeView(View view) {
         childViews.remove(view);
+    }
+
+    public List<View> getChildViews() {
+        return childViews;
+    }
+
+    public void setChildViews(List<View> childViews) {
+        this.childViews = childViews;
     }
 
 }

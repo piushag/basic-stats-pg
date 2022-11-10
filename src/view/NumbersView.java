@@ -13,6 +13,7 @@ import javax.swing.*;
  */
 public class NumbersView implements View
 {
+
     private JTextArea jtaNumbers;
 
     public NumbersView(JFrame jfMain) {
@@ -31,6 +32,19 @@ public class NumbersView implements View
             jtaNumbers.append(num + ",");
         }
 
+    }
+
+    @Override
+    public JTextField getJtfField() {
+        return null;
+    }
+
+    public JTextArea getJtaNumbers() {
+        return jtaNumbers;
+    }
+
+    public void setJtaNumbers(JTextArea jtaNumbers) {
+        this.jtaNumbers = jtaNumbers;
     }
 
 

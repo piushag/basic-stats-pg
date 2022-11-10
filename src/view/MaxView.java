@@ -5,6 +5,7 @@ import model.BasicStatsModel;
 import javax.swing.*;
 
 public class MaxView implements View {
+
     private JTextField jtfMax;
 
     public MaxView(JPanel jpStats) {
@@ -23,5 +24,13 @@ public class MaxView implements View {
             jtfMax.setText("" + max);
         }
 
+    }
+
+    public JTextField getJtfField() {
+        return jtfMax;
+    }
+
+    public void setJtfMax(JTextField jtfMax) {
+        this.jtfMax = jtfMax;
     }
 }

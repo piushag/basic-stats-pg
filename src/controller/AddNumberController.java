@@ -7,11 +7,11 @@ import javax.swing.*;
 
 public class AddNumberController implements Controller {
 
-    private BasicStatsView gui;
+    private BasicStatsView bsView;
 
 
-    public AddNumberController(BasicStatsView gui) {
-        this.gui = gui;
+    public AddNumberController(BasicStatsView bsView) {
+        this.bsView = bsView;
     }
 
 
@@ -28,12 +28,12 @@ public class AddNumberController implements Controller {
             num = Double.parseDouble(number);
             model.addNumber(num);
         } catch (NumberFormatException ex) {
-            String message = "Not a valid number";
-            JOptionPane.showMessageDialog(new JFrame(), message, "Error",
-                    JOptionPane.ERROR_MESSAGE);
+//            String message = "Not a valid number";
+//            JOptionPane.showMessageDialog(new JFrame(), message, "Error",
+//                    JOptionPane.ERROR_MESSAGE);
             throw new RuntimeException(ex);
         }
-        gui.update(model);
+        bsView.update(model);
 
     }
 }

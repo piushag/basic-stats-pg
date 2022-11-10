@@ -10,10 +10,6 @@ import java.awt.event.ActionListener;
 public class AddNumberView implements View{
     private JTextField jtfNumber;
 
-    public JTextField getJtfNumber() {
-        return jtfNumber;
-    }
-
     public void setJtfNumber(JTextField jtfNumber) {
         this.jtfNumber = jtfNumber;
     }
@@ -27,6 +23,7 @@ public class AddNumberView implements View{
     }
 
     private JButton jbAdd;
+
 
     private Controller cont;
 
@@ -46,6 +43,12 @@ public class AddNumberView implements View{
         jtfNumber.setText("");
     }
 
+    @Override
+    public JTextField getJtfField() {
+        return jtfNumber;
+    }
+
+
     public JTextField show() {
         return jtfNumber;
     }
@@ -58,6 +61,10 @@ public class AddNumberView implements View{
         cont = ctrl;
     }
 
+
+    public Controller getCont() {
+        return cont;
+    }
 
 
 }

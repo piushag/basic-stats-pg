@@ -10,6 +10,7 @@ import javax.swing.*;
  */
 public class MedianView implements View
 {
+
     private JTextField jtfMedian;
 
     public MedianView(JPanel jpStats) {
@@ -29,5 +30,13 @@ public class MedianView implements View
             jtfMedian.setText("" + median);
         }
 
+    }
+
+    public JTextField getJtfField() {
+        return jtfMedian;
+    }
+
+    public void setJtfMedian(JTextField jtfMedian) {
+        this.jtfMedian = jtfMedian;
     }
 }

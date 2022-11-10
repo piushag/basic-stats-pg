@@ -9,6 +9,7 @@ import javax.swing.*;
  */
 public class MeanView implements View
 {
+
     private JTextField jtfMean;
 
     public MeanView(JPanel jpStats) {
@@ -27,5 +28,14 @@ public class MeanView implements View
             jtfMean.setText("" + mean);
         }
 
+    }
+
+
+    public JTextField getJtfField() {
+        return jtfMean;
+    }
+
+    public void setJtfMean(JTextField jtfMean) {
+        this.jtfMean = jtfMean;
     }
 }
