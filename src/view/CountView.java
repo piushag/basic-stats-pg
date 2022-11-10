@@ -6,7 +6,7 @@ import javax.swing.*;
 
 
 /**
-Implements all the logic for adding the count
+ * The CountView class implements the logic to add and display the count field, and compute the count.
  */
 public class CountView implements View
 {

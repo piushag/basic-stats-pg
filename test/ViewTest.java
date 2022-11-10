@@ -22,7 +22,7 @@ public class ViewTest {
         addNumberView.addController(new AddNumberController(bsView));
     }
 
-
+    //Tests if the number is being added to the list of numbers
     @Test
     public void testAddNumberViewSuccess() {
         addNumberView.getJtfField().setText("1");
@@ -30,6 +30,7 @@ public class ViewTest {
         assertEquals(model.getArrayDouble()[0], 1.0, 0);
     }
 
+    //fail scenario for adding the numbers
     @Test(expected = RuntimeException.class)
     public void testAddNumberViewFails() {
         addNumberView.getJtfField().setText("abc");

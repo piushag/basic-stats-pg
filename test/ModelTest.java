@@ -9,21 +9,19 @@ public class ModelTest {
 
     private BasicStatsModel model;
 
-
-
     @Before
     public void setUp() {
         model = new BasicStatsModel();
-
     }
 
-
+    //Tests if the model is adding the number
     @Test
     public void testModelAddNumber(){
         model.addNumber(1.0);
         assertTrue(model.getArrayDouble().length != 0);
     }
 
+    //Tests if the reset method is clearing the fields
     @Test
     public void testModelReset(){
         model.addNumber(1.0);

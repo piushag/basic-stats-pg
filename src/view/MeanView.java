@@ -5,7 +5,7 @@ import model.BasicStatsModel;
 import javax.swing.*;
 
 /**
- Implements all the logic for adding the mean
+ * The MeanView class implements the logic to add and display the mean field, and compute the mean.
  */
 public class MeanView implements View
 {

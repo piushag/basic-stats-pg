@@ -15,9 +15,7 @@ public class ControllerTest {
 
     private BasicStatsModel model;
     private AddNumberView addNumberView;
-
     private ResetView resetView;
-
     private List<View> allViews;
 
     @Before
@@ -43,6 +41,7 @@ public class ControllerTest {
         BasicStats.getJfMain().dispatchEvent(new WindowEvent(BasicStats.getJfMain(), WindowEvent.WINDOW_CLOSING));
     }
 
+    //Tests if the controller is adding the number to the model and the view
     @Test
     public void testAdNumberController() {
         Controller cont_add = addNumberView.getCont();
@@ -55,6 +54,7 @@ public class ControllerTest {
         }
     }
 
+    //Tests if the reset controller is resetting all the fields
     @Test
     public void testResetController(){
         Controller cont_reset = resetView.getController();
@@ -67,7 +67,4 @@ public class ControllerTest {
         }
 
     }
-
-
-
 }

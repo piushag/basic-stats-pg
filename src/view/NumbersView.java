@@ -9,7 +9,7 @@ import javax.swing.*;
 
 
 /**
- Implements all the logic for adding the numbers
+ * The NumbersView class implements the logic to update and display the list of numbers.
  */
 public class NumbersView implements View
 {

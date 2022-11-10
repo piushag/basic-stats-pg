@@ -7,6 +7,10 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+
+/**
+ * The ResetView class implements the code to add the reset button, and call the reset controller when the button is clicked.
+ */
 public class ResetView implements View{
 
     public JButton getJbReset() {
@@ -22,7 +26,6 @@ public class ResetView implements View{
     private Controller controller;
 
     public ResetView(BasicStatsModel model){
-        // Panel with a text field/button to enter numbers and a button to reset the application
         jbReset = new JButton("Reset");
         jbReset.addActionListener(new ActionListener() {
             // The interface ActionListener defines a call-back method actionPerformed,
@@ -51,6 +54,9 @@ public class ResetView implements View{
         controller = ctrl;
     }
 
+    /**
+     * Adds a controller to execute the underlying functions
+     */
     public Controller getController() {
         return controller;
     }

@@ -8,7 +8,11 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * A simple class to compute basic, descriptive statistics.
+ * Creates a simple GUI that includes:
+ * - a text field and a button that allows the user to enter numbers.
+ * - a button that allows the user to clear all entered numbers.
+ * - a panel with labels and text fields for count, median, mean, and max.
+ * - a text area that shows all numbers.
  */
 public class BasicStats {
 
@@ -27,8 +31,6 @@ public class BasicStats {
 
 
     public static void main(String ... args) {
-
-        System.out.println("Let's do some basic statistics...");
 
         model = new BasicStatsModel();
 
@@ -54,14 +56,11 @@ public class BasicStats {
         AddNumberView addNumberView = new AddNumberView(model);
         ResetView resetView = new ResetView(model);
 
-
         ResetController reset = new ResetController(bsView);
         resetView.addController(reset);
 
         AddNumberController add = new AddNumberController(bsView);
         addNumberView.addController(add);
-
-
 
         bsView.addView(countView);
         bsView.addView(medianView);
@@ -71,11 +70,9 @@ public class BasicStats {
         bsView.addView(addNumberView);
         bsView.addView(resetView);
 
-
-
         jfMain.getContentPane().add(jpStats, BorderLayout.CENTER);
 
-
+        // Panel with a text field/button to enter numbers and a button to reset the application
         jpInput = new JPanel(new FlowLayout(FlowLayout.CENTER));
         jpInput.add(addNumberView.show());
         jpInput.add(addNumberView.getButton());

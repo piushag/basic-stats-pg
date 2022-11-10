@@ -4,6 +4,10 @@ import model.BasicStatsModel;
 
 import javax.swing.*;
 
+
+/**
+ * The MaxView class implements the logic to add and display the max field, and compute the max value.
+ */
 public class MaxView implements View {
 
     private JTextField jtfMax;

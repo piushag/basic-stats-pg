@@ -1,8 +1,11 @@
 package view;
 
-import java.text.DecimalFormat;
 import java.util.Arrays;
 
+
+/**
+ * The ViewUtils class contains all the logic for the math we do on the numbers added.
+ */
 public class ViewUtils {
 
     /**
@@ -73,6 +76,9 @@ public class ViewUtils {
         return numbers[size-1];
     }
 
+    /**
+     * Trims the numbers to 2 decimal points.
+     */
     private static double trimDecimal(double num){
         int temp = (int)(num*100.0);
         return ((double)temp)/100.0;

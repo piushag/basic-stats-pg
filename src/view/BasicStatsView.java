@@ -7,17 +7,11 @@ import java.util.List;
 
 import model.BasicStatsModel;
 
-import view.*;
 
 
 /**
- * Create a simple GUI that includes:
- * - a text field and a button that allows the user to enter numbers.
- * - a button that allows the user to clear all entered numbers.
- * - a panel with labels and text fields for count, median, and mean.
- * - a text area that shows all numbers.
- * <p>
- * For the MVC architecture pattern, these are the views and controllers.
+ * The BasicStatsView class is the Composite class of View.
+ * implements the logic to add the views and update them.
  */
 public class BasicStatsView implements View {
     public static final String APP_TITLE = "Simple stats";
@@ -45,10 +39,18 @@ public class BasicStatsView implements View {
     }
 
 
+    /**
+     * Add a view to the list of views.
+     * @param view
+     */
     public void addView(View view) {
         childViews.add(view);
     }
 
+    /**
+     * Remove a view from the list of views.
+     * @param view
+     */
     public void removeView(View view) {
         childViews.remove(view);
     }

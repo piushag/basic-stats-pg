@@ -5,6 +5,10 @@ import model.BasicStatsModel;
 
 import javax.swing.*;
 
+/**
+ * The AddNumberController class is the controller class to add a number.
+ * Implements the logic to update the model and views.
+ */
 public class AddNumberController implements Controller {
 
     private BasicStatsView bsView;

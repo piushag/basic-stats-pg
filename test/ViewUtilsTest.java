@@ -72,14 +72,14 @@ public class ViewUtilsTest {
     @Test
     public void testMax() {
         double[] numbers = {9, 11, 1, 4, 7, 21};
-
+        //max should be 21
         double max = ViewUtils.max(numbers);
         assertEquals(21, max, EPS);
-
+        //max should be 9
         double[] numbers2 = {9, 1, 4, 7, 2};
         max = ViewUtils.max(numbers2);
         assertEquals(9, max, EPS);
-
+        //max should be 3
         double[] numbers3 = {3};
         max = ViewUtils.max(numbers3);
         assertEquals(3, max, EPS);

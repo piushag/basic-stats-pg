@@ -3,6 +3,11 @@ package controller;
 import view.BasicStatsView;
 import model.BasicStatsModel;
 
+
+/**
+ * The ResetController class is the controller class to rest the view.
+ * Implements the logic to reset all the fields to the state after initial launch.
+ */
 public class ResetController implements Controller{
 
     BasicStatsView bsView;

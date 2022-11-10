@@ -6,7 +6,7 @@ import javax.swing.*;
 
 
 /**
- Implements all the logic for adding the median
+ * The MedianView class implements the logic to add and display the median field, and compute the median.
  */
 public class MedianView implements View
 {

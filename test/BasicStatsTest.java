@@ -54,6 +54,7 @@ public class BasicStatsTest {
         jfMain.dispatchEvent(new WindowEvent(jfMain, WindowEvent.WINDOW_CLOSING));
     }
 
+    //Tests if the app is running okay by checking if all the fields are initialized as expected.
     @Test
     public void testStartApp() {
         for (View vw : allViews) {
@@ -73,6 +74,8 @@ public class BasicStatsTest {
         }
     }
 
+    //Tests if max is being computed when a number is added
+    //This test case would fail if we did not fix the bug in the initial version of the app.
     @Test
     public void testMaxSuccess() {
         MaxView maxView = null;
@@ -89,6 +92,7 @@ public class BasicStatsTest {
         assertEquals(maxView.getJtfField().getText(), "5.0");
     }
 
+    //Tests if max fails when we add an invalid number
     @Test(expected = RuntimeException.class)
     public void testMaxFails() {
         MaxView maxView = null;
@@ -103,6 +107,7 @@ public class BasicStatsTest {
         assertTrue(maxView.getJtfField().getText().isBlank());
     }
 
+    //Tests if reset is working as expected by resetting to original state.
     @Test
     public void testResetSuccess() {
         addNumberView.getJtfField().setText("1");

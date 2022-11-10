@@ -18,5 +18,9 @@ public interface View
      */
     public void update(BasicStatsModel model);
 
+    /**
+     * Fetches the Text Field added by the View.
+     *
+     */
     JTextField getJtfField();
 }

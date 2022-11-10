@@ -3,21 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="efa0b192-2166-4793-8c8f-53818f16cddf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/BasicStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/BasicStats.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/controller/AddNumberController.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/controller/AddNumberController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/controller/ResetController.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/controller/ResetController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/gui/view/AddNumberView$1.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/gui/view/ResetView$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/BasicStatsView.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/BasicStatsView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/CountView.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/CountView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/MaxView.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/MaxView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/MeanView.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/MeanView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/MedianView.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/MedianView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/NumbersView.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/NumbersView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/test/basic-stats-pg/BasicStatsGUITest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/test/basic-stats-pg/BasicStatsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/test/basic-stats-pg/BasicStatsTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/AddNumberView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/AddNumberView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/ResetView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/ResetView$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BasicStats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BasicStats.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/AddNumberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/AddNumberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/ResetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ResetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/AddNumberView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AddNumberView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/BasicStatsView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/BasicStatsView.java" afterDir="false" />
@@ -28,7 +20,12 @@
       <change beforePath="$PROJECT_DIR$/src/view/NumbersView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/NumbersView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/ResetView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ResetView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ViewUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ViewUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/BasicStatsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BasicStatsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ModelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ViewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ViewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ViewUtilsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ViewUtilsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +137,8 @@
       <updated>1667687551545</updated>
       <workItem from="1667687559760" duration="8404000" />
       <workItem from="1667696286568" duration="33104000" />
-      <workItem from="1668041320575" duration="5591000" />
+      <workItem from="1668041320575" duration="6533000" />
+      <workItem from="1668048116420" duration="2881000" />
     </task>
     <servers />
   </component>
