@@ -14,6 +14,7 @@ public class UndoView implements View{
 
     public UndoView(BasicStatsModel model){
         jbUndo = new JButton("Undo");
+        jbUndo.setEnabled(false);
         jbUndo.addActionListener(new ActionListener() {
             // The interface ActionListener defines a call-back method actionPerformed,
             // which is invoked if the user interacts with the GUI component -- in this
@@ -25,6 +26,11 @@ public class UndoView implements View{
     }
     @Override
     public void update(BasicStatsModel model) {
+        if(model.getArrayDouble().length == 0){
+            jbUndo.setEnabled(false);
+        }else{
+            jbUndo.setEnabled(true);
+        }
     }
 
     @Override
