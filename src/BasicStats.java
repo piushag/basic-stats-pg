@@ -1,5 +1,6 @@
 import controller.AddNumberController;
 import controller.ResetController;
+import controller.UndoController;
 import view.*;
 
 import model.BasicStatsModel;
@@ -47,7 +48,7 @@ public class BasicStats {
 
         bsView = new BasicStatsView();
 
-        //new stuff
+        //Adding the views
         CountView countView = new CountView(jpStats);
         MedianView medianView = new MedianView(jpStats);
         MeanView meanView = new MeanView(jpStats);
@@ -55,12 +56,16 @@ public class BasicStats {
         NumbersView numbersView = new NumbersView(jfMain);
         AddNumberView addNumberView = new AddNumberView(model);
         ResetView resetView = new ResetView(model);
+        UndoView undoView = new UndoView(model);
 
         ResetController reset = new ResetController(bsView);
         resetView.addController(reset);
 
         AddNumberController add = new AddNumberController(bsView);
         addNumberView.addController(add);
+
+        UndoController undo = new UndoController(bsView);
+        undoView.addController(undo);
 
         bsView.addView(countView);
         bsView.addView(medianView);
@@ -69,6 +74,7 @@ public class BasicStats {
         bsView.addView(numbersView);
         bsView.addView(addNumberView);
         bsView.addView(resetView);
+        bsView.addView(undoView);
 
         jfMain.getContentPane().add(jpStats, BorderLayout.CENTER);
 
@@ -77,6 +83,7 @@ public class BasicStats {
         jpInput.add(addNumberView.show());
         jpInput.add(addNumberView.getButton());
         jpInput.add(resetView.getButton());
+        jpInput.add(undoView.getButton());
 
         jfMain.getContentPane().add(jpInput, BorderLayout.NORTH);
 

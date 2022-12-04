@@ -59,4 +59,17 @@ public class BasicStatsModel
 	
 	return result;
     }
+
+    public void undo(){
+        //when size of data is 0, do nothing
+        if(this.data.size()==0){
+            return;
+        }
+        //when size of data is 1, reset the views and disable undo
+        else if(this.data.size()==1){
+            this.data.remove(0);
+        }else{//Remove last element when more than 1 element exists
+            this.data.remove(this.data.size()-1);
+        }
+    }
 }

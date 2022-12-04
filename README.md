@@ -3,6 +3,9 @@
 A Java-based implementation for descriptive statistics. This
 implementation is merely intended to be used in the CS520/620 course.
 
+### Collaborators
+Debabrata Halder
+
 ### How to build and run (from Terminal):
 
 1. Make sure that you have Apache Ant installed. Run each ant command in the basic-stats folder, which contains the `build.xml` build file.
@@ -28,4 +31,5 @@ Program features:
 * Computes the mean of the set of numbers.
 * Computes the median of the set of numbers.
 * Computes the maximum of the set of numbers.
+* Additionally, has buttons to reset the view to initial state, and undo option to remove last added number.
     
