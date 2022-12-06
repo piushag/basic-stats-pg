@@ -1,24 +1,34 @@
 package model;
 
-import view.ViewUtils;
-
 import java.util.Arrays;
 
+/**
+ *Strategy Design pattern applied with the different helper classes for respective statistics.
+ */
 public class SimpleStatistics {
 
+    /**
+     *  Interface to compute the appropriate simple statistic.
+     */
     public interface ComputeStrategy {
 
         double computeStatistic(double[] numbers);
     }
 
-    public static class ComputeCount implements ComputeStrategy{
+    /**
+     * Count of numbers added so far.
+     */
+    public static class CountStatistic implements ComputeStrategy{
         @Override
         public double computeStatistic(double[] numbers) {
             return numbers.length;
         }
     }
 
-    public static class ComputeMax implements ComputeStrategy{
+    /**
+     * Compute the maximum of an array of numbers.
+     */
+    public static class MaxStatistic implements ComputeStrategy{
         @Override
         public double computeStatistic(double[] numbers) {
             Arrays.sort(numbers);
@@ -27,8 +37,10 @@ public class SimpleStatistics {
         }
     }
 
-
-    public static class ComputeMean implements ComputeStrategy{
+    /**
+     * Compute the mean of an array of numbers.
+     */
+    public static class MeanStatistic implements ComputeStrategy{
         @Override
         public double computeStatistic(double[] numbers) {
             double sum = 0;
@@ -39,7 +51,10 @@ public class SimpleStatistics {
         }
     }
 
-    public static class ComputeMedian implements ComputeStrategy{
+    /**
+     * Compute the median of an array of numbers.
+     */
+    public static class MedianStatistic implements ComputeStrategy{
         @Override
         public double computeStatistic(double[] numbers) {
             Arrays.sort(numbers);

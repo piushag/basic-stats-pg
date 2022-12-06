@@ -9,7 +9,7 @@ import java.awt.event.ActionListener;
 
 
 /**
- * The ResetView class implements the code to add the reset button, and call the reset controller when the button is clicked.
+ * The ResetView class implements the logic to add the reset button, and call the reset controller when the button is clicked.
  */
 public class ResetView implements View{
 
@@ -50,13 +50,13 @@ public class ResetView implements View{
         return jbReset;
     }
 
+    /**
+     * Adds a controller to execute the underlying functions
+     */
     public void addController(Controller ctrl) {
         controller = ctrl;
     }
 
-    /**
-     * Adds a controller to execute the underlying functions
-     */
     public Controller getController() {
         return controller;
     }

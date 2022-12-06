@@ -14,6 +14,7 @@ import java.awt.*;
  * - a button that allows the user to clear all entered numbers.
  * - a panel with labels and text fields for count, median, mean, and max.
  * - a text area that shows all numbers.
+ * - a button that allows you to undo the last number added.
  */
 public class BasicStats {
 

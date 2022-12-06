@@ -7,6 +7,10 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+
+/**
+ * The UndoView class implements the logic to add the undo button, and call the undo controller when the button is clicked.
+ */
 public class UndoView implements View{
     private JButton jbUndo;
 
@@ -43,13 +47,13 @@ public class UndoView implements View{
         return jbUndo;
     }
 
+    /**
+     * Adds a controller to execute the underlying functions
+     */
     public void addController(Controller ctrl) {
         controller = ctrl;
     }
 
-    /**
-     * Adds a controller to execute the underlying functions
-     */
     public Controller getController() {
         return controller;
     }

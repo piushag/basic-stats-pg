@@ -77,7 +77,7 @@ public class BasicStatsTest {
                 assertTrue(vw.getJtfField().isEditable());
             } else if (vw instanceof ResetView) {
                 assertTrue(((ResetView) vw).getJbReset().isEnabled());
-            }else{
+            }else if (vw instanceof NumbersView){
                 assertTrue(((NumbersView)vw).getJtaNumbers().getText().isBlank());
             }
         }

@@ -27,7 +27,7 @@ public class MedianView implements View
         }else {
             // Compute and set the median
 //            double median = ViewUtils.median(model.getArrayDouble());
-            double median = new SimpleStatistics.ComputeMedian().computeStatistic(model.getArrayDouble());
+            double median = new SimpleStatistics.MedianStatistic().computeStatistic(model.getArrayDouble());
             jtfMedian.setText("" + median);
         }
 

@@ -27,7 +27,7 @@ public class MaxView implements View {
         }else {
             // Compute and set the maximum
 //            double max = ViewUtils.max(model.getArrayDouble());
-            double max = new SimpleStatistics.ComputeMax().computeStatistic(model.getArrayDouble());
+            double max = new SimpleStatistics.MaxStatistic().computeStatistic(model.getArrayDouble());
             jtfMax.setText("" + max);
         }
 

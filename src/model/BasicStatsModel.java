@@ -60,15 +60,19 @@ public class BasicStatsModel implements Model
 	return result;
     }
 
+
+    /**
+     * Removes the last added number.
+     *
+     * Post-condition: The list of numbers does not have the last added number,
+     * or empty if only 1 number was preset.
+     */
     public void undo(){
         //when size of data is 0, do nothing
         if(this.data.size()==0){
             return;
-        }
-        //when size of data is 1, reset the views and disable undo
-        else if(this.data.size()==1){
-            this.data.remove(0);
-        }else{//Remove last element when more than 1 element exists
+        }else{
+            //Remove last element when 1 or more elements exist
             this.data.remove(this.data.size()-1);
         }
     }
