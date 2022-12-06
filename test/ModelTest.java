@@ -28,4 +28,12 @@ public class ModelTest {
         model.reset();
         assertTrue(model.getArrayDouble().length ==0);
     }
+
+    //Tests if the undo method is removing the last number
+    @Test
+    public void testModelUndo(){
+        model.addNumber(1.0);
+        model.undo();
+        assertTrue(model.getArrayDouble().length ==0);
+    }
 }
