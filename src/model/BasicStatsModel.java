@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * The BasicStatsModel class stores a list of numbers. This class provides
  * the data representation for the MVC architecture pattern.
  */
-public class BasicStatsModel
+public class BasicStatsModel implements Model
 {
     // Store all collected numbers
     private ArrayList<Double> data = new ArrayList<Double>();

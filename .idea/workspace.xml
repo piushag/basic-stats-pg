@@ -3,7 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="efa0b192-2166-4793-8c8f-53818f16cddf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/UndoView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/UndoView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/BasicStatsModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/BasicStatsModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/CountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CountView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MaxView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MaxView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MeanView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MeanView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MedianView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MedianView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ViewUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ViewUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/BasicStatsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/BasicStatsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestSimpleStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestSimpleStatistics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,39 +59,43 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ViewUtilsTest">
-    <configuration name="BasicStatsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BasicStatsTest.testUndoDisabled">
+    <configuration name="BasicStatsTest.testResetSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basic-stats-pg" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="BasicStatsTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testResetSuccess" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BasicStatsTest.testUndoDisabled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="basic-stats-pg" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BasicStatsTest" />
+      <option name="METHOD_NAME" value="testUndoDisabled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BasicStatsTest.testUndoSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="basic-stats-pg" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="BasicStatsTest" />
+      <option name="METHOD_NAME" value="testUndoSuccess" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ControllerTest.testResetController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basic-stats-pg" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ModelTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="basic-stats-pg" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ModelTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ViewTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="basic-stats-pg" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ViewTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testResetController" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -100,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BasicStatsTest.testUndoDisabled" />
+        <item itemvalue="JUnit.BasicStatsTest.testUndoSuccess" />
+        <item itemvalue="JUnit.BasicStatsTest.testResetSuccess" />
+        <item itemvalue="JUnit.ControllerTest.testResetController" />
         <item itemvalue="JUnit.ViewUtilsTest" />
-        <item itemvalue="JUnit.ViewTest" />
-        <item itemvalue="JUnit.ModelTest" />
-        <item itemvalue="JUnit.ControllerTest" />
-        <item itemvalue="JUnit.BasicStatsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +136,7 @@
       <workItem from="1669675287231" duration="111000" />
       <workItem from="1669675486096" duration="450000" />
       <workItem from="1669917201384" duration="129000" />
-      <workItem from="1670173804658" duration="6223000" />
+      <workItem from="1670173804658" duration="15204000" />
     </task>
     <servers />
   </component>

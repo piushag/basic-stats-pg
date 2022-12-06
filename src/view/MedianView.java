@@ -1,6 +1,7 @@
 package view;
 
 import model.BasicStatsModel;
+import model.SimpleStatistics;
 
 import javax.swing.*;
 
@@ -25,8 +26,8 @@ public class MedianView implements View
             jtfMedian.setText("");
         }else {
             // Compute and set the median
-
-            double median = ViewUtils.median(model.getArrayDouble());
+//            double median = ViewUtils.median(model.getArrayDouble());
+            double median = new SimpleStatistics.ComputeMedian().computeStatistic(model.getArrayDouble());
             jtfMedian.setText("" + median);
         }
 

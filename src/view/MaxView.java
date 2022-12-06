@@ -1,6 +1,7 @@
 package view;
 
 import model.BasicStatsModel;
+import model.SimpleStatistics;
 
 import javax.swing.*;
 
@@ -20,11 +21,13 @@ public class MaxView implements View {
     }
 
     public void update(BasicStatsModel model){
+
         if (model.getArrayDouble().length == 0) {
             jtfMax.setText("");
         }else {
             // Compute and set the maximum
-            double max = ViewUtils.max(model.getArrayDouble());
+//            double max = ViewUtils.max(model.getArrayDouble());
+            double max = new SimpleStatistics.ComputeMax().computeStatistic(model.getArrayDouble());
             jtfMax.setText("" + max);
         }
 

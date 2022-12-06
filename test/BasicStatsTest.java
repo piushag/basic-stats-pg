@@ -25,6 +25,10 @@ public class BasicStatsTest {
 
     private ResetView resetView;
 
+    private UndoView undoView;
+    
+    private NumbersView numsView;
+
     private List<View> allViews;
 
     @Before
@@ -45,6 +49,11 @@ public class BasicStatsTest {
                 addNumberView = (AddNumberView) vw;
             } else if (vw instanceof ResetView) {
                 resetView = (ResetView) vw;
+            }else if(vw instanceof UndoView){
+                undoView = (UndoView) vw;
+            } else if (vw instanceof NumbersView) {
+                numsView = (NumbersView) vw;
+                
             }
         }
     }
@@ -112,6 +121,13 @@ public class BasicStatsTest {
     public void testResetSuccess() {
         addNumberView.getJtfField().setText("1");
         addNumberView.getButton().doClick();
+
+        for (View vw : allViews) {
+            if (vw instanceof CountView || vw instanceof MaxView || vw instanceof MeanView || vw instanceof MedianView) {
+                assertFalse(vw.getJtfField().getText().isBlank());
+            }
+        }
+
         resetView.getButton().doClick();
 
         for (View vw : allViews) {
@@ -120,5 +136,52 @@ public class BasicStatsTest {
             }
         }
     }
+
+    @Test
+    public void testUndoDisabled(){
+        assertFalse(undoView.getButton().isEnabled());
+
+        addNumberView.getJtfField().setText("1");
+        addNumberView.getButton().doClick();
+
+        assertTrue(undoView.getButton().isEnabled());
+    }
+
+    @Test
+    public void testUndoSuccess() {
+        addNumberView.getJtfField().setText("1");
+        addNumberView.getButton().doClick();
+
+        undoView.getButton().doClick();
+
+
+        for (View vw : allViews) {
+            if (vw instanceof CountView || vw instanceof MaxView || vw instanceof MeanView || vw instanceof MedianView || vw instanceof AddNumberView) {
+                assertTrue(vw.getJtfField().getText().isBlank());
+            }
+        }
+
+        addNumberView.getJtfField().setText("2");
+        addNumberView.getButton().doClick();
+
+        addNumberView.getJtfField().setText("3");
+        addNumberView.getButton().doClick();
+
+        assertFalse(numsView.getJtaNumbers().getText().isBlank());
+        String nums = "2.0,3.0,";
+        assertEquals(numsView.getJtaNumbers().getText(), nums);
+
+
+        undoView.getButton().doClick();
+
+
+        assertFalse(numsView.getJtaNumbers().getText().isBlank());
+        String nums_2 = "2.0,";
+        assertEquals(numsView.getJtaNumbers().getText(), nums_2);
+
+
+    }
+
+    
 
 }
