@@ -3,16 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="efa0b192-2166-4793-8c8f-53818f16cddf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/BasicStats.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/BasicStats.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/controller/UndoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/controller/UndoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/model/BasicStatsModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/model/BasicStatsModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/MaxView.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/MaxView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/ResetView.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/ResetView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/UndoView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/UndoView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/UndoView.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/UndoView.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/test/basic-stats-pg/BasicStatsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/test/basic-stats-pg/BasicStatsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/test/basic-stats-pg/ModelTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/test/basic-stats-pg/ModelTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ModelTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ModelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +52,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ModelTest.testModelUndo">
+  <component name="RunManager" selected="JUnit.All in basic-stats-pg">
     <configuration name="BasicStats" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BasicStats" />
       <module name="basic-stats-pg" />
@@ -87,11 +78,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BasicStatsTest.testUndoSuccess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ControllerTest.testUndoController" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basic-stats-pg" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="BasicStatsTest" />
-      <option name="METHOD_NAME" value="testUndoSuccess" />
+      <option name="MAIN_CLASS_NAME" value="ControllerTest" />
+      <option name="METHOD_NAME" value="testUndoController" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,11 +100,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in basic-stats-pg" />
+        <item itemvalue="JUnit.ControllerTest.testUndoController" />
         <item itemvalue="JUnit.ModelTest.testModelUndo" />
         <item itemvalue="Application.BasicStats" />
-        <item itemvalue="JUnit.All in basic-stats-pg" />
         <item itemvalue="JUnit.BasicStatsTest.testUndoDisabled" />
-        <item itemvalue="JUnit.BasicStatsTest.testUndoSuccess" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +125,7 @@
       <workItem from="1669675287231" duration="111000" />
       <workItem from="1669675486096" duration="450000" />
       <workItem from="1669917201384" duration="129000" />
-      <workItem from="1670173804658" duration="19792000" />
+      <workItem from="1670173804658" duration="20091000" />
     </task>
     <servers />
   </component>
