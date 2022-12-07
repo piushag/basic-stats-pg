@@ -1,11 +1,11 @@
-package model;
+package view;
 
 import java.util.Arrays;
 
 /**
  *Strategy Design pattern applied with the different helper classes for respective statistics.
  */
-public class SimpleStatistics {
+public class SimpleStatisticView {
 
     /**
      *  Interface to compute the appropriate simple statistic.
@@ -18,7 +18,7 @@ public class SimpleStatistics {
     /**
      * Count of numbers added so far.
      */
-    public static class CountStatistic implements ComputeStrategy{
+    public static class CountStatistic implements SimpleStatisticView.ComputeStrategy {
         @Override
         public double computeStatistic(double[] numbers) {
             return numbers.length;
@@ -28,7 +28,7 @@ public class SimpleStatistics {
     /**
      * Compute the maximum of an array of numbers.
      */
-    public static class MaxStatistic implements ComputeStrategy{
+    public static class MaxStatistic implements SimpleStatisticView.ComputeStrategy {
         @Override
         public double computeStatistic(double[] numbers) {
             Arrays.sort(numbers);
@@ -40,21 +40,21 @@ public class SimpleStatistics {
     /**
      * Compute the mean of an array of numbers.
      */
-    public static class MeanStatistic implements ComputeStrategy{
+    public static class MeanStatistic implements SimpleStatisticView.ComputeStrategy {
         @Override
         public double computeStatistic(double[] numbers) {
             double sum = 0;
             for (double num : numbers) {
                 sum += num;
             }
-            return ModelUtils.trimDecimal(sum / numbers.length);
+            return ViewUtils.trimDecimal(sum / numbers.length);
         }
     }
 
     /**
      * Compute the median of an array of numbers.
      */
-    public static class MedianStatistic implements ComputeStrategy{
+    public static class MedianStatistic implements SimpleStatisticView.ComputeStrategy {
         @Override
         public double computeStatistic(double[] numbers) {
             Arrays.sort(numbers);
@@ -71,8 +71,9 @@ public class SimpleStatistics {
                 }
             }
 
-            return ModelUtils.trimDecimal(median);
+            return ViewUtils.trimDecimal(median);
         }
     }
+
 
 }

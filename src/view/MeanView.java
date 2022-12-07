@@ -1,7 +1,6 @@
 package view;
 
 import model.BasicStatsModel;
-import model.SimpleStatistics;
 
 import javax.swing.*;
 
@@ -26,7 +25,7 @@ public class MeanView implements View
         }else {
             // Compute and set the mean
 //            double mean = ViewUtils.mean(model.getArrayDouble());
-            double mean = new SimpleStatistics.MeanStatistic().computeStatistic(model.getArrayDouble());
+            double mean = new SimpleStatisticView.MeanStatistic().computeStatistic(model.getArrayDouble());
             jtfMean.setText("" + mean);
         }
 

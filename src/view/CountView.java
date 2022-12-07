@@ -1,7 +1,6 @@
 package view;
 
 import model.BasicStatsModel;
-import model.SimpleStatistics;
 
 import javax.swing.*;
 
@@ -27,7 +26,7 @@ public class CountView implements View
         }else {
             // Compute and set the count
 //            int count = model.getArrayDouble().length;
-            int count = (int) new SimpleStatistics.CountStatistic().computeStatistic(model.getArrayDouble());
+            int count = (int) new SimpleStatisticView.CountStatistic().computeStatistic(model.getArrayDouble());
             jtfCount.setText("" + count);
         }
     }

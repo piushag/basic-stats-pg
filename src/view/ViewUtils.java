@@ -79,7 +79,7 @@ public class ViewUtils {
     /**
      * Trims the numbers to 2 decimal points.
      */
-    private static double trimDecimal(double num){
+    public static double trimDecimal(double num){
         int temp = (int)(num*100.0);
         return ((double)temp)/100.0;
     }

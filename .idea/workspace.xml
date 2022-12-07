@@ -3,7 +3,100 @@
   <component name="ChangeListManager">
     <list default="true" id="efa0b192-2166-4793-8c8f-53818f16cddf" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/ControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/ControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/model/ModelUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/model/SimpleStatistics$ComputeStrategy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/model/SimpleStatistics$CountStatistic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/model/SimpleStatistics$MaxStatistic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/model/SimpleStatistics$MeanStatistic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/model/SimpleStatistics$MedianStatistic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/model/SimpleStatistics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/CountView.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/CountView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/MaxView.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/MaxView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/MeanView.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/MeanView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/MedianView.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/MedianView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/ViewUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/basic-stats-pg/view/ViewUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/test/basic-stats-pg/TestSimpleStatistics.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/BasicStats.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/BasicStats.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/allclasses-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/allpackages-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/class-use/BasicStats.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/class-use/BasicStats.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/controller/AddNumberController.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/controller/AddNumberController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/controller/Controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/controller/Controller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/controller/ResetController.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/controller/ResetController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/controller/UndoController.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/controller/UndoController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/controller/class-use/AddNumberController.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/controller/class-use/AddNumberController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/controller/class-use/Controller.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/controller/class-use/Controller.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/controller/class-use/ResetController.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/controller/class-use/ResetController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/controller/class-use/UndoController.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/controller/class-use/UndoController.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/controller/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/controller/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/controller/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/controller/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/controller/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/controller/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/index-all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/member-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/member-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/BasicStatsModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/model/BasicStatsModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/Model.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/model/Model.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/ModelUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/SimpleStatistics.ComputeStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/SimpleStatistics.CountStatistic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/SimpleStatistics.MaxStatistic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/SimpleStatistics.MeanStatistic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/SimpleStatistics.MedianStatistic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/SimpleStatistics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/class-use/BasicStatsModel.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/model/class-use/BasicStatsModel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/class-use/Model.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/model/class-use/Model.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/class-use/ModelUtils.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/class-use/SimpleStatistics.ComputeStrategy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/class-use/SimpleStatistics.CountStatistic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/class-use/SimpleStatistics.MaxStatistic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/class-use/SimpleStatistics.MeanStatistic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/class-use/SimpleStatistics.MedianStatistic.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/class-use/SimpleStatistics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/model/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/model/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/model/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/model/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/overview-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/type-search-index.js" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/type-search-index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/AddNumberView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/AddNumberView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/BasicStatsView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/BasicStatsView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/CountView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/CountView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/MaxView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/MaxView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/MeanView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/MeanView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/MedianView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/MedianView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/NumbersView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/NumbersView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/ResetView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/ResetView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/UndoView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/UndoView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/View.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/View.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/ViewUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/ViewUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/class-use/AddNumberView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/class-use/AddNumberView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/class-use/BasicStatsView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/class-use/BasicStatsView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/class-use/CountView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/class-use/CountView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/class-use/MaxView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/class-use/MaxView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/class-use/MeanView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/class-use/MeanView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/class-use/MedianView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/class-use/MedianView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/class-use/NumbersView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/class-use/NumbersView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/class-use/ResetView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/class-use/ResetView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/class-use/UndoView.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/class-use/UndoView.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/class-use/View.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/class-use/View.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/class-use/ViewUtils.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/class-use/ViewUtils.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/package-summary.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/package-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jdoc/view/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/jdoc/view/package-use.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ModelUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/SimpleStatistics.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/CountView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/CountView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MaxView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MaxView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MeanView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MeanView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MedianView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MedianView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ViewUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ViewUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/TestSimpleStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/TestSimpleStatisticView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +218,8 @@
       <workItem from="1669675287231" duration="111000" />
       <workItem from="1669675486096" duration="450000" />
       <workItem from="1669917201384" duration="129000" />
-      <workItem from="1670173804658" duration="20091000" />
+      <workItem from="1670173804658" duration="21918000" />
+      <workItem from="1670379310094" duration="1337000" />
     </task>
     <servers />
   </component>

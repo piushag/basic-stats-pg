@@ -1,18 +1,18 @@
-import model.SimpleStatistics;
+import view.SimpleStatisticView;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestSimpleStatistics {
+public class TestSimpleStatisticView {
 
     private static double EPS = 1e-9;
 
     @Test
     public void testCentralTendency() {
         double[] numbers = {2, 2, 3, 3, 3, 4, 4};
-        double mean   = new SimpleStatistics.MeanStatistic().computeStatistic(numbers);
+        double mean   = new SimpleStatisticView.MeanStatistic().computeStatistic(numbers);
         assertEquals (3, mean, EPS);
-        double median =  new SimpleStatistics.MedianStatistic().computeStatistic(numbers);
+        double median =  new SimpleStatisticView.MedianStatistic().computeStatistic(numbers);
         assertEquals (3, median, EPS);
     }
 
@@ -22,22 +22,22 @@ public class TestSimpleStatistics {
         /* double[] numbers = {1, 4, 7, 9, 11, 21}; */
         double[] numbers = {9, 11, 1, 4, 7, 21};
 
-        double median =  new SimpleStatistics.MedianStatistic().computeStatistic(numbers);
+        double median =  new SimpleStatisticView.MedianStatistic().computeStatistic(numbers);
         assertEquals(8.0, median, EPS);
 
         //Median should be 7 since size is odd
         double[] numbers2 = {9, 1, 4, 7, 21};
-        median =  new SimpleStatistics.MedianStatistic().computeStatistic(numbers2);
+        median =  new SimpleStatisticView.MedianStatistic().computeStatistic(numbers2);
         assertEquals(7, median, EPS);
 
         //Median should be 3 since size is 1
         double[] numbers3 = {3};
-        median =  new SimpleStatistics.MedianStatistic().computeStatistic(numbers3);
+        median =  new SimpleStatisticView.MedianStatistic().computeStatistic(numbers3);
         assertEquals(3, median, EPS);
 
         //Median should be 0 since size is 0
         double[] numbers4 = {};
-        median =  new SimpleStatistics.MedianStatistic().computeStatistic(numbers4);
+        median =  new SimpleStatisticView.MedianStatistic().computeStatistic(numbers4);
         assertEquals(0, median, EPS);
     }
 
@@ -46,15 +46,15 @@ public class TestSimpleStatistics {
     public void testMax() {
         double[] numbers = {9, 11, 1, 4, 7, 21};
         //max should be 21
-        double max =  new SimpleStatistics.MaxStatistic().computeStatistic(numbers);
+        double max =  new SimpleStatisticView.MaxStatistic().computeStatistic(numbers);
         assertEquals(21, max, EPS);
         //max should be 9
         double[] numbers2 = {9, 1, 4, 7, 2};
-        max = new SimpleStatistics.MaxStatistic().computeStatistic(numbers2);
+        max = new SimpleStatisticView.MaxStatistic().computeStatistic(numbers2);
         assertEquals(9, max, EPS);
         //max should be 3
         double[] numbers3 = {3};
-        max = new SimpleStatistics.MaxStatistic().computeStatistic(numbers3);
+        max = new SimpleStatisticView.MaxStatistic().computeStatistic(numbers3);
         assertEquals(3, max, EPS);
     }
 }
